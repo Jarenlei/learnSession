@@ -1,0 +1,9 @@
+{"root":{"name":"test","pass":"jkslafj","age",18}}
+
+{"callId":"testCallid","errMsg":"success","isError":0}
+
+命令模式的启示：
+需要请求的参数格式化时，需要用到命令模式，如此次http请求中，HttpUriRequest是post还是get请求，是需要根据条件判断的；
+对请求的参数和返回的类都做一次封装，用于提供自定义的方法；
+新增一个HttpExecutorService里封装Command，执行command.executor()并将返回值封装成HttpRespose，这样做减少了代码并对外
+作易用的客户端封装；
