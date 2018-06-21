@@ -18,7 +18,7 @@ public class HibernateUtil {
     private static SessionFactory buildSessionFactory() {
         try {
             Crypto crypto = new Crypto();
-            String configPath = new File(JarTool.getJarDir()).getParent() + File.separator + "config" + File.separator;
+            String configPath = new File(JarTool.getJarDir()).getParent() + File.separator + "config1" + File.separator;
 //            Configuration cfg = new Configuration().configure(new File(configPath + "hibernate.cfg.xml"));
              Configuration cfg = new Configuration().configure();
 //             cfg.getProperties().put("hibernate.connection.username",
